@@ -9,7 +9,6 @@
   <head>
 
 
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
     <!-- Required meta tags -->
 
@@ -165,7 +164,7 @@
 <h4><%= t("Merci_de_me_contacter_pour_connaitre_les_disponnibilités")%></h4>
 <br></br>
 
-  <%= simple_form_for (:bookings) do |f| %>
+  <%= simple_form_for :contact, url: contacts_path do |f| %>
    <div class="booking  justify-content-center">
      <div class="booking">
       <h4><%= t("Booking")%></h4>
